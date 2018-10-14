@@ -1,0 +1,50 @@
+/**
+* acc_summary()
+*/
+function acc_summary(){
+	_click(_link("Account Summary"));
+	//_assertEqual(_link("Account Summary", {className:"active"}));
+	_assertEqual(_byClassName("active"));
+}
+
+/**
+* acc_activity()
+*/
+function acc_activity(){
+	_click(_link("Account Activity"));
+	//_assertEqual(_link("Account Activity"), _activeElement());
+	_assertEqual(_byClassName("active"));
+}
+
+/**
+* transfer()
+*/
+function transfer(){
+	_click(_link("Transfer Funds"));
+	//_assertEqual(_link("Transfer Funds"), _activeElement());
+	_assertEqual(_byClassName("active"));
+}
+
+/**
+* pay_bills()
+*/
+function pay_bills(){
+	_click(_link("Pay Bills"));
+	//_assertEqual(_link("Pay Bills"), _activeElement());
+	_assertEqual(_byClassName("active"));
+}
+
+/* --Functions Above-- */
+
+acc_summary();
+
+
+acc_activity();
+
+
+transfer();
+
+
+pay_bills();
+
+

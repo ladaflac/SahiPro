@@ -1,0 +1,47 @@
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_include__accessors.sah___0.png</screenshot>
+ *<description></description>
+ */
+_include("accessors.sah");
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_click___LINK_PAYBILLS__0.png</screenshot>
+ *<description></description>
+ */
+_click($_LINK_PAYBILLS);
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_click___LINK_PURCHASEFOREIGNCURRENCY__1.png</screenshot>
+ *<description></description>
+ */
+_click($_LINK_PURCHASEFOREIGNCURRENCY);
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_setSelected___SELECT_CURRENCY___Eurozone__euro____2.png</screenshot>
+ *<description></description>
+ */
+_setSelected($_SELECT_CURRENCY, "Eurozone (euro)");
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_setValue___TEXTBOX_AMOUNT1___125___3.png</screenshot>
+ *<description></description>
+ */
+_setValue($_TEXTBOX_AMOUNT1, "125");
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_check___RADIO_PC_INDOLLARS_TRUE__4.png</screenshot>
+ *<description></description>
+ */
+_check($_RADIO_PC_INDOLLARS_TRUE);
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_click___BUTTON_CALCULATECOSTS__5.png</screenshot>
+ *<description></description>
+ */
+_click($_BUTTON_CALCULATECOSTS);
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_click___SUBMIT_PURCHASE__6.png</screenshot>
+ *<description></description>
+ */
+_click($_SUBMIT_PURCHASE);
+/**
+ *<screenshot>FX purchase.sah_images/FX purchase.sah_assertExists___DIV_FOREIGNCURRENCYCASHWASSUCCESSFULLYPURCHASED____assertVisible___DIV_FOREIGNCURRENCYCASHWASSUCCESSFULLYPURCHASED____assertEqual__Foreign_currency_cash_was_successfully_purchased.____getText___DIV_FOREIGNCURRENCYCASHWASSUCCESSFULLYPURCHASED___7.png</screenshot>
+ *<description></description>
+ */
+_assertExists($_DIV_FOREIGNCURRENCYCASHWASSUCCESSFULLYPURCHASED);
+_assertVisible($_DIV_FOREIGNCURRENCYCASHWASSUCCESSFULLYPURCHASED);
+_assertEqual("Foreign currency cash was successfully purchased.", _getText($_DIV_FOREIGNCURRENCYCASHWASSUCCESSFULLYPURCHASED));

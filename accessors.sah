@@ -1,0 +1,16 @@
+
+/* C:/Users/Lada/sahi_pro/userdata/scripts/FX purchase.sah */
+
+/* C:/Users/Lada/sahi_pro/userdata/scripts/FX purchase.sah */
+
+/* C:/Users/Lada/sahi_pro/userdata/scripts/FX purchase.sah */
+
+/* C:/Users/Lada/sahi_pro/userdata/scripts/FX purchase.sah */
+var $_LINK_PAYBILLS = _link("Pay Bills");
+var $_LINK_PURCHASEFOREIGNCURRENCY = _link("Purchase Foreign Currency");
+var $_SELECT_CURRENCY = _select("currency");
+var $_TEXTBOX_AMOUNT1 = _textbox("amount[1]");
+var $_RADIO_PC_INDOLLARS_TRUE = _radio("pc_inDollars_true");
+var $_BUTTON_CALCULATECOSTS = _button("Calculate Costs");
+var $_SUBMIT_PURCHASE = _submit("Purchase");
+var $_DIV_FOREIGNCURRENCYCASHWASSUCCESSFULLYPURCHASED = _div("Foreign currency cash was successfully purchased.");

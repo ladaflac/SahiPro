@@ -1,0 +1,29 @@
+/**
+* navigate_to_onlinebanking($http___zero_webappsecurity_com_online_banking_html)
+* @param $http___zero_webappsecurity_com_online_banking_html - 
+*/
+function navigate_to_onlinebanking($http___zero_webappsecurity_com_online_banking_html){
+	_navigateTo($http___zero_webappsecurity_com_online_banking_html);
+
+}
+		 
+/**
+* login($user_login, $user_password)
+* @param $user_login - 
+* @param $user_password - 
+*/
+function login($user_login, $user_password){
+	_click(_italic("icon-signin"));
+	_setValue(_textbox("user_login"), $user_login);
+	_setPassword(_password("user_password"), $user_password);
+	_click(_submit("Sign in"));
+
+}
+
+/* --Functions Above-- */
+
+navigate_to_onlinebanking("http://zero.webappsecurity.com/online-banking.html");
+login("username", "MQ0aEBJPGwo=");
+_assertExists(_link("username"));
+_assertVisible(_link("username"));
+_assertEqual("username", _getText(_link("username")));
